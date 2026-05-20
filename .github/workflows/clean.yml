@@ -2,8 +2,7 @@ name: Cleanup Old Workflow Runs
 
 on:
   schedule:
-    # 每天北京时间 9:00 运行（UTC 时间 1:00）
-    - cron: "* 17 * * *"
+    - cron: "5 */23 * * *" # 每23小时在整点后5分进行一次
 
   workflow_dispatch:
     inputs:
